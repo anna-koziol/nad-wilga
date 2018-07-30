@@ -1,0 +1,164 @@
+@media screen and (max-width:1210px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+}
+
+@media screen and (max-width:978px) {
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    #logo-block img {
+        width: 60%;
+    }
+    #banner-telephone>.row>.col-4 {
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width:796px) {
+    #banner-telephone>.row>.col-4 {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:742px) {
+    #logo-block {
+        width: 65%;
+        height: 40%;
+    }
+    #logo-block img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:796px) {
+    #banner-telephone>.row>.col-4 {
+        font-size: 100%;
+    }
+    .icon-telephone {
+        transform: rotate(-90deg) scale(0.3);
+    }
+}
+
+@media screen and (max-width:603px) {
+    #banner-telephone>.row>.col-4 {
+        font-size: 70%;
+    }
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    h3 {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .table td, .table th {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width:603px) {
+    #banner-telephone>.row>.col-4 {
+        font-size: 70%;
+    }
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    h3 {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #photo-Arkadiusz-Ujma {
+        width: 40vw;
+        height: 40vw;
+        margin-top: 10% !important;
+    }
+}
+
+@media screen and (max-width:523px) {
+    #logo-block {
+        width: 80%;
+        height: 30%;
+    }
+    #logo-block img {
+        width: 70%;
+    }
+    h1 {
+        font-size: 1rem !important;
+    }
+    #banner-telephone {
+        display: none;
+    }
+    #banner-telephone-smart {
+        display: block;
+    }
+    .table td, .table th {
+        font-size: 45%;
+    }
+    .table th, .table td {
+        padding: .50rem !important;
+    }
+    .table {
+        margin-bottom: 4rem !important;
+    }
+    .table-comment {
+        font-size: 70%;
+    }
+    .banner>h5 {
+        font-size: 0.8rem;
+    }
+    .banner>p {
+        font-size: 80%;
+    }
+    .icons {
+        width: 40%;
+    }
+    .span-footer > .icon-telephone {
+        width: 20%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:398px) {
+    #banner-telephone-smart>.row>.col-6 {
+        font-size: 80%;
+    }
+    h2 {
+        font-size: 1rem !important;
+    }
+    h3 {
+        font-size: 0.6rem !important;
+    }
+    .a-menu {
+        font-size: 80%;
+    }
+    .table th, .table td {
+        padding: .3rem !important;
+    }
+    #address-banner {
+        font-size: 70%;
+    }
+    .cards-promotion>h5 {
+        font-size: .75rem !important;
+    }
+    .cards-promotions>p {
+        font-size: 70% !important;
+    }
+}
+
+@media screen and (max-width:356px) {
+    #banner-telephone-smart>.row>.col-6 {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width:335px) {
+    #banner-telephone-smart>.row>.col-6 {
+        font-size: 60%;
+    }
+}

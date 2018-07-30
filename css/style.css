@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    overflow-x: hidden;
+}
+
+*:focus, *:hover {
+    outline: none;
+}
+
+::selection {
+    background: rgb(165, 14, 14);
+}
+
+::-moz-selection {
+    background: rgb(165, 14, 14);
+}
+
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url("../fonts/CooperHewitt-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'CooperHewitt-Bolder';
+    src: url("../fonts/CooperHewitt-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'CooperHewitt';
+    font-weight: bold;
+    src: url("../fonts/CooperHewitt-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'CooperHewitt';
+    font-weight: lighter;
+    src: url("../fonts/CooperHewitt-Thin.otf") format("opentype");
+}
+
+body {
+    background-color: rgb(0, 0, 0)!important;
+    text-align: center;
+    font-family: 'CooperHewitt', serif !important;
+    color: white !important;
+}
+
+#intro {
+    text-align: center;
+    height: 100vh;
+    background-image: url('../graphics/Photos/fancycrave-458022-unsplash.jpg');
+    background-attachment: fixed;
+    position: relative;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+}
+
+.full-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.full-img-sides {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#logo-block {
+    width: 45%;
+    height: 40%;
+    background-color: black;
+    border: 2px solid white;
+    outline: 10px solid black;
+    overflow: hidden;
+    -webkit-animation: grown 0.5s cubic-bezier(0.4, 0.6, 0.8, 1) both;
+	        animation: grown 0.5s cubic-bezier(0.4, 0.6, 0.8, 1) both;
+}
+
+#logo-block img {
+    width: 40%;
+    height: auto;
+}
+
+#logo-block h1 {
+    padding: 2%;
+    font-weight: bolder;
+    overflow-y: hidden;
+}
+
+#banner-telephone, #banner-telephone-smart, .shadow {
+    background: rgb(165, 14, 14);
+    height: 10vh;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#banner-telephone-smart {
+    height: 20vh;
+    display: none;
+}
+
+#banner-telephone>.row>.col-4,  #banner-telephone-smart>.row>.felx-column {
+    height: 10vh;
+    font-size: 200%;
+    font-family: 'CooperHewitt-Bolder', serif !important;
+}
+
+#banner-telephone-smart>.row {
+    height: 10vh;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+span {
+    overflow-y: hidden !important;
+}
+
+
+.parallelogram {
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    transform: skew(-15deg);
+
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+}
+
+.black-block {
+    background: black;
+}
+
+.parallelogram span {
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    -o-transform: skew(15deg);
+    transform: skew(15deg);
+}
+
+.icon-telephone {
+    -webkit-transform: rotate(-90deg) scale(0.6);
+    -moz-transform: rotate(-90deg) scale(0.6);
+    -o-transform: rotate(-90deg) scale(0.6);
+    -ms-transform: rotate(-90deg) scale(0.6);
+    transform: rotate(-90deg) scale(0.4);
+}
+
+a, a:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: rgb(247, 208, 208) !important;
+    transition: 1s;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'CooperHewitt-Bolder', serif !important;
+}
+
+.section-margin {
+    margin-top: 10%;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem !important;
+    padding: 2%;
+    padding-left: 10% !important;
+    padding-right: 10% !important;  
+    overflow-y: hidden;
+}
+
+h2 {
+    padding: 2%;
+}
+
+.side-image:first-of-type {
+    /*background-image: url("../graphics/Photos/side-1a.png");*/
+    background-image: url("../graphics/Photos/fancycrave-458022-unsplash.jpg");
+    background-position: top left;
+}
+
+.side-image {
+    /*background-image: url("../graphics/Photos/side-1b.png");*/
+    background-image: url("../graphics/Photos/fancycrave-458022-unsplash.jpg");
+    background-position: top right;
+}
+
+.col-8 {
+    width: 66% !important;
+}
+
+.menu-list-items {
+    padding: 1%;
+    border-bottom: 1px solid white;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.menu-list-items:hover {
+    color: rgb(165, 14, 14);
+    transition: 1s;
+}
+
+#accordion-menu-topic {
+    margin-bottom: 50% !important;
+}
+
+#address-banner, #caterig-banner {
+    background: rgb(165, 14, 14);
+    height: 10vh;
+}
+
+#address-banner>p {
+    margin-bottom: 0rem;
+    font-family: 'CooperHewitt-Bolder', serif;
+}
+
+.yellow {
+    color: rgb(236, 236, 15);
+    text-transform: uppercase;
+}
+
+.cards-promotions {
+    border: 1px solid white;
+    text-align: center;
+}
+
+h5 {
+    font-weight: bolder !important;
+    padding: 20%;
+}
+
+#img-delivery {
+    background-image: url("../graphics/Photos/pizza-1702652_640.jpg")
+}
+
+#img-drink {
+    background-image: url("../graphics/Photos/beverage-3468108_1280.jpg")
+}
+
+#caterig-banner>h2 {
+    padding: 1%;
+}
+
+#caterig-banner {
+    height: auto !important;
+    text-align: center;
+    padding: 1%;
+}
+
+.banner-slider img {
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.banner-slider {
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-slider:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.orange {
+    color: rgb(165, 14, 14);
+    font-weight: bold;
+}
+
+#photo-Arkadiusz-Ujma {
+    background-image: url("../graphics/Photos/IMG_20171117_202509_019.jpg");
+    border: 10px solid rgb(165, 14, 14);
+    width: 30vw;
+    height: 30vw;
+    margin-right: 0 !important;
+}
+
+#photo-Arkadiusz-Ujma>img {
+    width: 450px !important;
+}
+
+.card {
+    color: white !important;
+    background: transparent !important;
+    border-bottom: 1px solid white !important;
+}
+
+.a-menu {
+    font-weight: bold;
+    font-size: 110%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.a-menu:hover {
+    color: rgb(165, 14, 14) !important;
+}
+
+.table thead th {
+    border-top: 0px solid #dee2e6 !important;
+}
+
+.table {
+    margin-bottom: 7rem !important;
+}
+
+.table-comment {
+    font-weight: bold;
+    text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 15%;
+}
+
+.icons {
+    width: 20%;
+    margin-top: 20%;
+    margin-bottom: -10%;
+}
+
+#text-meetings>h5 {
+    padding: 0%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#footer-logo {
+    width: 90%;
+    height: auto;
+}
+
+#footer {
+    padding: 2%;
+}
+
+.h5-footer {
+    padding: 0%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.span-footer > .icon-telephone {
+    width: 10%;
+    height: auto;
+}
+
+img[alt="facebook icon"] {
+    padding: 1%;
+}
+
