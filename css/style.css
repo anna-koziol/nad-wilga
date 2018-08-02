@@ -415,7 +415,7 @@ img[alt="facebook icon"] {
 
 .nav-link:hover {
     color: rgb(165, 14, 14) !important;
-    transition: 1s;
+    transition: 1.5s;
     cursor: pointer;
 }
 
