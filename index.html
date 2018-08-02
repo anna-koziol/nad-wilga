@@ -7,15 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NAD WILGĄ</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/rwd.css">
-    <link rel="stylesheet" href="css/aniamtions.css">
-    
-
     <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRNDpaoUEySSxNdI3sUV44VbcAxrYjRqc"></script>-->
-
     <script src="js/libs/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
@@ -27,11 +20,37 @@
 
     <link rel="shortcut icon" href="graphics/Icons/logo-black-background-transparent.png">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/aniamtions.css">
+    <script src="js/script.js"></script>
+
     <!--Icons made by Freepik from www.flaticon.com is licensed by CC 3.0 BY-->
 </head>
 
 <body>
     <div id="content-main">
+        <!--NAVIGATION-->
+        <nav class="navbar navbar-expand-lg navbar-dark opacity-grow">
+            <a class="navbar-brand quotes">
+                <!--Icons made by Smashicons from www.flaticon.com is licensed by CC 3.0 BY-->
+                <img src="graphics/Icons/logo-white-background-transparent.png" width="60" height="60" class="d-inline-block" alt="Nad Wilga logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="menuHref">Menu</a>
+                    <a class="nav-item nav-link" id="promotionsHref">Promocje</a>
+                    <a class="nav-item nav-link" id="cateringHref">Caterig</a>
+                    <a class="nav-item nav-link" id="meetingHref">Warsztaty</a>
+                    <a class="nav-item nav-link" id="contactHref">Kontakt</a>
+
+                </div>
+            </div>
+        </nav>
 
         <!--INTRO-->
         <div id="intro" class="container-fluid full-img flex-column">
@@ -39,6 +58,14 @@
                 <img src="graphics/Icons/logo-white-background-transparent.png" alt="Nad Wilgą logo pizza">
                 <h1>BAR - KAWIARNIA - PIZZERIA</h1>
             </div>
+        </div>
+
+        <!--ADDRES BANNER-->
+        <div class="container-fluid flex-column" id="address-banner">
+            <p>WRZĄSOWICE (POKRZYWNICA), UL. WRZOSOWA 119</p>
+            <p>CZYNNE OD
+                <b>11:00 - 22:00</b>
+            </p>
         </div>
 
         <!--BANNER TELEPHONE-->
@@ -52,8 +79,7 @@
                     </span>
                 </div>
                 <div class="col-4 parallelogram black-block flex-column">
-                    <span>NIE CZEKAJ!</span>
-                    <span>ZAMÓW PIZZĘ!</span>
+                    <span>ZADZWOŃ I ZAMÓW</span>
                 </div>
                 <div class="col-4 flex-column">
                     <span>
@@ -69,7 +95,7 @@
         <div id="banner-telephone-smart" class="container-fluid">
             <div class="row">
                 <div class="col flex-column black-block shadow">
-                    <b>NIE CZEKAJ! ZAMÓW PIZZĘ!</b>
+                    <b>ZADZWOŃ I ZAMÓW</b>
                 </div>
             </div>
             <div class="row">
@@ -90,7 +116,6 @@
                 </div>
             </div>
         </div>
-
 
         <!--MENU LIST-->
         <div id="menu-list" class="container-fluid">
@@ -116,7 +141,7 @@
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th colspan="2">PIZZA</th>
+                                                    <th colspan="2" class="table-heading">PIZZA</th>
                                                     <th>MAŁA
                                                         <br>26CM</th>
                                                     <th>ŚREDNIA
@@ -357,7 +382,7 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th>DODATKI</th>
+                                                            <th class="table-heading">DODATKI</th>
                                                             <th>MAŁA</th>
                                                             <th>ŚREDNIA</th>
                                                             <th>DUŻA</th>
@@ -396,7 +421,7 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th colspan="2">SOSY DO PIZZY</th>
+                                                            <th colspan="2" class="table-heading">SOSY DO PIZZY</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -421,11 +446,15 @@
                                             </div>
                                         </div>
 
-
+                                        <div class="row flex-column">
+                                            <img src="graphics/Photos/20180517_213640.jpg" alt="pizza Nad Wilgą photo" class="menu-photos">
+                                        </div>
 
                                     </div>
                                 </div>
                             </div>
+
+
                             <div class="card">
                                 <div class="card-header" role="tab" id="second-menu-item">
                                     <a class="collapsed a-menu flex-column" data-toggle="collapse" data-parent="accordion-menu-topic" href="#second-under-item"
@@ -434,94 +463,178 @@
                                 <div id="second-under-item" class="collapse" role="tabpanel" aria-labelledby="second-menu-item">
                                     <div class="card-body">
 
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2" class="table-heading">ZUPY</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Zupa dnia</th>
+                                                            <td>5,00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Flaczki</th>
+                                                            <td>8,00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Gulasz</th>
+                                                            <td>10,00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="2" class="table-heading">DANIA OBIADOWE</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Kotlet drobiowy</th>
+                                                        <td>11,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kotlet devolay</th>
+                                                        <td>12,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Pierś z kurczaka w cieście</th>
+                                                        <td>11,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Chrupiące kurczaki</th>
+                                                        <td>11,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kotlet schabowy</th>
+                                                        <td>11,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span>
+                                                                Góralski kotlet schabowy z kością
+                                                                <p class="yellow">NEW!</p>
+                                                            </span>
+                                                        </th>
+                                                        <td>13,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span>
+                                                                Schab pieczony w sosie grzybowym z rozmarynem
+                                                                <p class="yellow">NEW!</p>
+                                                            </span>
+                                                        </th>
+                                                        <td>13,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span>
+                                                                Policzki wieprzowe w sosie własnym
+                                                                <p class="yellow">NEW!</p>
+                                                            </span>
+                                                        </th>
+                                                        <td>14,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span>
+                                                                Piwne żeberka w sosie miodowym
+                                                                <p class="yellow">NEW!</p>
+                                                            </span>
+                                                        </th>
+                                                        <td>16,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span>
+                                                                Góralski pstrąg z masełkiem czosnkowym
+                                                                <p class="yellow">HIT!</p>
+                                                            </span>
+                                                        </th>
+                                                        <td>18,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Placki ziemniaczane z sosem pieczarkowym</th>
+                                                        <td>10,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Placki ziemniaczane z gulaszem i surówką</th>
+                                                        <td>14,00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <p class="table-comment margin-bottom">DO KAŻDEGO DANIA OBIADOWEGO ZESTAW SURÓWEK GRATIS!</p>
+
+
+                                        <div class="row">
+
+                                            <div class="col-6">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2" class="table-heading">DODATKI</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Ziemniaki</th>
+                                                            <td>3,00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Frytki</th>
+                                                            <td>4,00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Opiekane ćwiartki ziemniaków</th>
+                                                            <td>4,00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+
+                                            <div class="col-6">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2" class="table-heading">PIEROGI (12 SZT.)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Z mięsem</th>
+                                                            <td>10,00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Ruskie</th>
+                                                            <td>9,00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Z owocami</th>
+                                                            <td>9,00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th colspan="2">DANIA OBIADOWE</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">Kotlet drobiowy</th>
-                                                    <td>11,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Kotlet devolay</th>
-                                                    <td>12,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Pierś z kurczaka w cieście</th>
-                                                    <td>11,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Chrupiące kurczaki</th>
-                                                    <td>11,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Kotlet schabowy</th>
-                                                    <td>11,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <span>
-                                                            Góralski kotlet schabowy z kością
-                                                            <p class="yellow">NEW!</p>
-                                                        </span>
-                                                    </th>
-                                                    <td>13,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <span>
-                                                            Schab pieczony w sosie grzybowym z rozmarynem
-                                                            <p class="yellow">NEW!</p>
-                                                        </span>
-                                                    </th>
-                                                    <td>13,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <span>
-                                                            Policzki wieprzowe w sosie własnym
-                                                            <p class="yellow">NEW!</p>
-                                                        </span>
-                                                    </th>
-                                                    <td>14,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <span>
-                                                            Piwne żeberka w sosie miodowym
-                                                            <p class="yellow">NEW!</p>
-                                                        </span>
-                                                    </th>
-                                                    <td>16,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <span>
-                                                            Góralski pstrąg z masełkiem czosnkowym
-                                                            <p class="yellow">HIT!</p>
-                                                        </span>
-                                                    </th>
-                                                    <td>18,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Placki ziemniaczane z sosem pieczarkowym</th>
-                                                    <td>10,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Placki ziemniaczane z gulaszem i surówką</th>
-                                                    <td>14,00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th colspan="3">SAŁATKI (250G)</th>
+                                                    <th colspan="3" class="table-heading">SAŁATKI (250G)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -553,80 +666,8 @@
                                             </tbody>
                                         </table>
 
-                                        <div class="row">
-
-                                            <div class="col-6 col-xl-4">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="2">DODATKI</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">Ziemniaki</th>
-                                                            <td>3,00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Frytki</th>
-                                                            <td>4,00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Opiekane ćwiartki ziemniaków</th>
-                                                            <td>4,00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
-                                            <div class="col-6 col-xl-4">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="2">ZUPY</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">Zupa dnia</th>
-                                                            <td>5,00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Flaczki</th>
-                                                            <td>8,00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Gulasz</th>
-                                                            <td>10,00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
-                                            <div class="col-6 col-xl-4">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th colspan="2">PIEROGI (12 SZT.)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">Z mięsem</th>
-                                                            <td>10,00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Ruskie</th>
-                                                            <td>9,00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Z owocami</th>
-                                                            <td>9,00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
+                                        <div class="row flex-column">
+                                            <img src="graphics/Photos/20180421_154812.jpg" alt="pizza Nad Wilgą photo" class="menu-photos">
                                         </div>
 
                                     </div>
@@ -644,7 +685,7 @@
                                             <thead>
                                                 <tr>
                                                     <th colspan="3">
-                                                        <span>
+                                                        <span class="table-heading">
                                                             BURGERY
                                                             <p class="yellow">HIT!</p>
                                                         </span>
@@ -680,6 +721,10 @@
 
                                         <p class="table-comment margin-bottom">DO KAŻDEGO BURGERA FRYTKI 3 ZŁ</p>
 
+                                        <div class="row flex-column">
+                                            <img src="graphics/Photos/20180704_212905.jpg" alt="pizza Nad Wilgą photo" class="menu-photos">
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -694,7 +739,7 @@
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th colspan="2">FAST FOOD</th>
+                                                    <th colspan="2" class="table-heading">FAST FOOD</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -746,7 +791,7 @@
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th colspan="3">STRIPSY</th>
+                                                    <th colspan="3" class="table-heading">STRIPSY</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -780,7 +825,7 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th>SOKI</th>
+                                                            <th class="table-heading">SOKI</th>
                                                             <th>1L</th>
                                                         </tr>
                                                     </thead>
@@ -798,7 +843,9 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th>PIWO (BUTELKOWE I PUSZKOWE)</th>
+                                                            <th class="table-heading">
+                                                                PIWO (BUTELKOWE I PUSZKOWE)
+                                                            </th>
                                                             <th>0,5L</th>
                                                         </tr>
                                                     </thead>
@@ -817,7 +864,7 @@
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th>NAPOJE ZIMNE</th>
+                                                    <th class="table-heading">NAPOJE ZIMNE</th>
                                                     <th>0,5L</th>
                                                     <th>1L</th>
                                                     <th>2L</th>
@@ -851,16 +898,13 @@
         </div>
 
         <!--ADDRES BANNER-->
-        <div class="container-fluid flex-column" id="address-banner">
-            <p>WRZĄSOWICE (POKRZYWNICA), UL. WRZOSOWA 119</p>
-            <p>CZYNNE OD
-                <b>11:00 - 22:00</b>
-            </p>
+        <div class="container-fluid flex-column" id="ad-banner">
+            <p>NIE CZEKAJ! ZAMÓW PIZZĘ</p>
         </div>
 
 
         <!--PROMOTIONS-->
-        <div class="container">
+        <div class="container" id="promotion">
             <div class="flex-column">
                 <h2 class="section-margin">PROMOCJE</h2>
                 <h3>~ Specjalnie dla Ciebie przygotowaliśmy oferty ~</h3>
@@ -888,7 +932,7 @@
                     <p>- 60 zł 2 l napoju gratis</p>
                     <span>
                         <p class="yellow">*</p>
-                        <p>(nie dotyczy napoi)</p>
+                        <p>(promocja dotyczy posiłków)</p>
                     </span>
                 </div>
                 <div class="col-6 col-md-3 cards-promotions full-img" id="img-drink"></div>
@@ -924,7 +968,7 @@
 
                 <div class="row">
                     <div class="col-4 flex-column banner">
-                        <p>Dyspounjemy salą do 60 osób oraz salą do 40 osób + sala dance.</p>
+                        <p>Dyspounjemy salą do 60 osób albo salą do 40 osób + sala dance.</p>
                     </div>
                     <div class="col-4 flex-column banner">
                         <p>Ugościmy i zaopiekujemy się wszytskimi Twoimi gośćmi.</p>
@@ -943,29 +987,29 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3 banner-slider">
-                    <img src="graphics/Photos/FB_IMG_1532672712439.jpg" alt="Nad Wilgą photo restaurant">
+                    <img src="graphics/Photos/20180716_162828.jpg" alt="Nad Wilgą photo restaurant">
                 </div>
                 <div class="col-3 banner-slider">
-                    <img src="graphics/Photos/FB_IMG_1532672629919.jpg" alt="Nad Wilgą photo restaurant">
-                </div>
-                <div class="col-3 banner-slider">
-                    <img src="graphics/Photos/FB_IMG_1532672621271.jpg" alt="Nad Wilgą photo restaurant">
+                    <img src="graphics/Photos/20180710_160714.jpg" alt="Nad Wilgą photo restaurant">
                 </div>
                 <div class="col-3 banner-slider">
                     <img src="graphics/Photos/FB_IMG_1532672690008.jpg" alt="Nad Wilgą photo restaurant">
+                </div>
+                <div class="col-3 banner-slider">
+                    <img src="graphics/Photos/20180622_183410.jpg" alt="Nad Wilgą photo restaurant">
                 </div>
             </div>
         </div>
 
 
         <!--MEETINGS-->
-        <div class="container">
+        <div class="container" id="meeting">
             <div class="flex-column">
                 <h2 class="section-margin">WARSZTATY, SPOTKANIA, POKAZY</h2>
                 <h3>~ POZNAJ OSOBOŚCIE NASZEGO KUCHARZA ~</h3>
             </div>
 
-            <div class="row section-margin" id="meeting">
+            <div class="row section-margin">
                 <div class="col-12 col-sm-6" id="text-meetings">
                     <h5>ORGANIZACJA IMPREZ ORAZ CATERINGÓWZ UCZESTNIKIEM 6 EDYCJI PROGRAMU</h5>
                     <p class="orange">MASTERCHEF POLSKA</p>

@@ -7,6 +7,7 @@
     text-decoration: none;
     outline: 0;
     overflow-x: hidden;
+    text-align: left !important;
 }
 
 *:focus, *:hover {
@@ -87,7 +88,7 @@ body {
     outline: 10px solid black;
     overflow: hidden;
     -webkit-animation: grown 0.5s cubic-bezier(0.4, 0.6, 0.8, 1) both;
-	        animation: grown 0.5s cubic-bezier(0.4, 0.6, 0.8, 1) both;
+    animation: grown 0.5s cubic-bezier(0.4, 0.6, 0.8, 1) both;
 }
 
 #logo-block img {
@@ -101,7 +102,7 @@ body {
     overflow-y: hidden;
 }
 
-#banner-telephone, #banner-telephone-smart, .shadow {
+#banner-telephone, #banner-telephone-smart, .shadow, #ad-banner {
     background: rgb(165, 14, 14);
     height: 10vh;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -109,12 +110,18 @@ body {
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+#ad-banner>p {
+    margin-bottom: 0rem !important;
+    font-size: 160%;
+    font-weight: bold;
+}
+
 #banner-telephone-smart {
     height: 20vh;
     display: none;
 }
 
-#banner-telephone>.row>.col-4,  #banner-telephone-smart>.row>.felx-column {
+#banner-telephone>.row>.col-4, #banner-telephone-smart>.row>.felx-column {
     height: 10vh;
     font-size: 200%;
     font-family: 'CooperHewitt-Bolder', serif !important;
@@ -129,13 +136,11 @@ span {
     overflow-y: hidden !important;
 }
 
-
 .parallelogram {
     -webkit-transform: skew(-15deg);
     -moz-transform: skew(-15deg);
     -o-transform: skew(-15deg);
     transform: skew(-15deg);
-
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
@@ -189,7 +194,7 @@ h3 {
     font-size: 1.2rem !important;
     padding: 2%;
     padding-left: 10% !important;
-    padding-right: 10% !important;  
+    padding-right: 10% !important;
     overflow-y: hidden;
 }
 
@@ -246,7 +251,10 @@ h2 {
 
 .cards-promotions {
     border: 1px solid white;
-    text-align: center;
+}
+
+#promotions > div > p, #promotions > div > h5 {
+    text-align: center !important;
 }
 
 h5 {
@@ -255,7 +263,7 @@ h5 {
 }
 
 #img-delivery {
-    background-image: url("../graphics/Photos/pizza-1702652_640.jpg")
+    background-image: url("../graphics/Photos/20180517_213640.jpg")
 }
 
 #img-drink {
@@ -316,7 +324,7 @@ h5 {
 
 .a-menu {
     font-weight: bold;
-    font-size: 110%;
+    font-size: 200%;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -335,7 +343,7 @@ h5 {
 
 .table-comment {
     font-weight: bold;
-    text-align: center;
+    text-align: center !important;
 }
 
 .margin-bottom {
@@ -369,7 +377,7 @@ h5 {
     padding-top: 10%;
 }
 
-.span-footer > .icon-telephone {
+.span-footer>.icon-telephone {
     width: 10%;
     height: auto;
 }
@@ -378,3 +386,39 @@ img[alt="facebook icon"] {
     padding: 1%;
 }
 
+.table-heading {
+    font-size: 150%;
+}
+
+.menu-photos {
+    width: 50%;
+    height: auto;
+    border: 5px double white;
+}
+
+.navbar {
+    background-color: black !important;
+    position: fixed !important;
+    width: 100vw;
+    z-index: 5;
+    top: 0;
+    border-bottom: 2px solid white;
+    display: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(165, 14, 14) !important;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.banner p{
+    text-align: center !important;
+}
