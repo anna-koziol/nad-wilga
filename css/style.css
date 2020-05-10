@@ -371,6 +371,11 @@ h5 {
     padding: 10px;
 }
 
+.table-comment-big {
+    font-size: 150%;
+    color: yellow;
+}
+
 .margin-bottom {
     margin-bottom: 15%;
 }
