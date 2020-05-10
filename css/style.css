@@ -10,7 +10,8 @@
     text-align: left !important;
 }
 
-*:focus, *:hover {
+*:focus,
+*:hover {
     outline: none;
 }
 
@@ -67,6 +68,14 @@ body {
     align-content: space-around;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
 .full-img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,7 +111,10 @@ body {
     overflow-y: hidden;
 }
 
-#banner-telephone, #banner-telephone-smart, .shadow, #ad-banner {
+#banner-telephone,
+#banner-telephone-smart,
+.shadow,
+#ad-banner {
     background: rgb(165, 14, 14);
     height: 10vh;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -121,7 +133,8 @@ body {
     display: none;
 }
 
-#banner-telephone>.row>.col-4, #banner-telephone-smart>.row>.felx-column {
+#banner-telephone>.row>.col-4,
+#banner-telephone-smart>.row>.felx-column {
     height: 10vh;
     font-size: 200%;
     font-family: 'CooperHewitt-Bolder', serif !important;
@@ -165,7 +178,8 @@ span {
     transform: rotate(-90deg) scale(0.4);
 }
 
-a, a:hover {
+a,
+a:hover {
     color: white !important;
     text-decoration: none !important;
 }
@@ -234,7 +248,8 @@ h2 {
     margin-bottom: 50% !important;
 }
 
-#address-banner, #caterig-banner {
+#address-banner,
+#caterig-banner {
     background: rgb(165, 14, 14);
     height: 10vh;
 }
@@ -247,13 +262,15 @@ h2 {
 .yellow {
     color: rgb(236, 236, 15);
     text-transform: uppercase;
+    width: 40%;
 }
 
 .cards-promotions {
     border: 1px solid white;
 }
 
-#promotions > div > p, #promotions > div > h5 {
+#promotions>div>p,
+#promotions>div>h5 {
     text-align: center !important;
 }
 
@@ -346,6 +363,14 @@ h5 {
     text-align: center !important;
 }
 
+.table-comment-small {
+    font-size: 80%;
+    margin-top: -5rem;
+    border: 1px solid rgb(68, 67, 67);
+    border-radius: 2px;
+    padding: 10px;
+}
+
 .margin-bottom {
     margin-bottom: 15%;
 }
@@ -421,4 +446,9 @@ img[alt="facebook icon"] {
 
 .banner p {
     text-align: center !important;
+}
+
+.red-subtitle {
+    padding: 10px;
+    background-color: rgb(165, 14, 14);
 }
