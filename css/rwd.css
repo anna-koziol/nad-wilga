@@ -54,7 +54,8 @@
 }
 
 @media screen and (max-width:670px) {
-    .table td, .table th {
+    .table td,
+    .table th {
         font-size: 70%;
     }
 }
@@ -96,10 +97,12 @@
     #banner-telephone-smart {
         display: block;
     }
-    .table td, .table th {
+    .table td,
+    .table th {
         font-size: 45%;
     }
-    .table th, .table td {
+    .table th,
+    .table td {
         padding: .50rem !important;
     }
     .table {
@@ -117,11 +120,14 @@
     .icons {
         width: 40%;
     }
-    .span-footer > .icon-telephone {
+    .span-footer>.icon-telephone {
         width: 20%;
         height: auto;
     }
-
+    .table-comment-small {
+        font-size: 55%;
+        margin-top: -2rem;
+    }
 }
 
 @media screen and (max-width:398px) {
@@ -137,7 +143,8 @@
     .a-menu {
         font-size: 80%;
     }
-    .table th, .table td {
+    .table th,
+    .table td {
         padding: .3rem !important;
     }
     #address-banner {
@@ -148,6 +155,9 @@
     }
     .cards-promotions>p {
         font-size: 70% !important;
+    }
+    .red-subtitle {
+        font-size: 0.8rem;
     }
 }
 
