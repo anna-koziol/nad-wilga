@@ -262,7 +262,7 @@ h2 {
 .yellow {
     color: rgb(236, 236, 15);
     text-transform: uppercase;
-    width: 40%;
+    width: 100%;
 }
 
 .cards-promotions {
@@ -449,11 +449,18 @@ img[alt="facebook icon"] {
     cursor: pointer;
 }
 
-.banner p {
+.banner p,
+h3,
+.a-menu {
     text-align: center !important;
 }
 
 .red-subtitle {
     padding: 10px;
     background-color: rgb(165, 14, 14);
+}
+
+.fa-pepper-hot {
+    min-width: 17%;
+    padding: 2px;
 }
